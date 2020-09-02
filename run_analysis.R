@@ -47,6 +47,6 @@ data_avg<- summarise_at(by_subject_activity, select_var, mean) %>%
   arrange(subjects, activity)
 
 ## save tidy data sets in Tidy data folder
-write.table(data_keep, "./Tidy data/data_keep.txt")
-write.table(data_avg, "./Tidy data/data_avg.txt")
+write.table(data_keep, "./Tidy data/data_keep.txt", row.names = FALSE)
+write.table(data_avg, "./Tidy data/data_avg.txt", row.names = FALSE)
 
